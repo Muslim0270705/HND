@@ -5,7 +5,7 @@ import { logout } from '@/source/shared/lib/auth';
 import { Button } from 'antd';
 import { useTranslations } from 'next-intl';
 
-export default function Home({ params: { locale } }) {
+export default function Home({ }) {
 	const t = useTranslations('general');
 	const { isLoggedIn, user } = useAuth();
 
