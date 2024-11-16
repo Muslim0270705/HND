@@ -4,6 +4,7 @@ import { useAuth } from '@/source/shared/hooks';
 import { Loader, SiteLogo } from '@/source/shared/ui';
 import { useLocale, useTranslations } from 'next-intl';
 import { useRouter } from 'next/navigation';
+import { PropsWithChildren } from 'react';
 
 export default function AuthLayout({ children }: PropsWithChildren<unknown>) {
 	const t = useTranslations('general');
